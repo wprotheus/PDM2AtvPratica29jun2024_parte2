@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PDM2AtvPratica29jun2024_parte2</string>
+    <string name="txt_nr_partida">1</string>
+    <string name="txt_acertou">ACERTOU</string>
+    <string name="txt_desc_imagem">Figura de um gatinho</string>
+    <string name="txt_desc_jogada">Partida</string>
+    <string name="txt_resultado_jogada">Resultado da Partida</string>
+    <string name="txt_nr_jogada"> # </string>
+    <string name="txt_titulo">RANKING DAS PARTIDAS JOGADAS</string>
+    <string name="btn_home">HOME</string>
+    <string name="btn_visualizar">VISUALIZAR</string>
+    <string name="txt_logo">Logomarca do IFTO</string>
+    <string name="txt_nome_player">Jogador</string>
+    <string name="txt_nome_jogador">Nome</string>
+    <string name="txt_nr_gerados">Números</string>
+    <string name="txt_numeros">Nr gerados</string>
+    <string name="txt_soma_nr">Soma</string>
+    <string name="txt_soma_numeros">Soma</string>
+    <string name="txt_barra_status">Barra de status customizada</string>
+
+</resources>

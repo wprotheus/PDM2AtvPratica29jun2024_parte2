@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lvPartida"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
+    android:background="#C8E6C9"
+    android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvPartida"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="@string/txt_nr_partida"
+            android:textAlignment="center"
+            android:textColor="#063770"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toEndOf="@+id/tvNrPartida"
+            app:layout_constraintTop_toBottomOf="@+id/tvNrGerados" />
+
+        <ImageView
+            android:id="@+id/ivAcertouErrou"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/txt_desc_imagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/tvResultadoPartida"
+            app:srcCompat="@drawable/gatoacertou" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:duplicateParentState="false"
+            android:text="@string/txt_acertou"
+            android:textAlignment="center"
+            android:textColor="#063770"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/ivAcertouErrou"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvSomaNumeros"
+            app:layout_constraintTop_toBottomOf="@+id/tvResultadoPartida" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="4dp"
+            android:background="#90CAF9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAcertouErrou" />
+
+        <TextView
+            android:id="@+id/tvJogada"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_desc_jogada"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/cor_nome_app"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvJogador"
+            app:layout_constraintEnd_toStartOf="@+id/tvJogador"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResultadoPartida"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_resultado_jogada"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/cor_nome_app"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvSomaNr"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNrPartida"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nr_jogada"
+            android:textAlignment="center"
+            android:textColor="#063770"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNrGerados" />
+
+        <TextView
+            android:id="@+id/tvNomeJogador"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:autoSizeTextType="uniform"
+            android:maxLength="10"
+            android:text="@string/txt_nome_jogador"
+            android:textColor="#063770"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/tvNumerosGerados"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@+id/tvPartida"
+            app:layout_constraintTop_toBottomOf="@+id/tvNrGerados" />
+
+        <TextView
+            android:id="@+id/tvNumerosGerados"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:text="@string/txt_numeros"
+            android:textColor="#063770"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/tvSomaNumeros"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvNomeJogador"
+            app:layout_constraintTop_toBottomOf="@+id/tvNrGerados" />
+
+        <TextView
+            android:id="@+id/tvSomaNumeros"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_soma_numeros"
+            android:textColor="#063770"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/tvResultado"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvNumerosGerados"
+            app:layout_constraintTop_toBottomOf="@+id/tvSomaNr" />
+
+        <TextView
+            android:id="@+id/tvJogador"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nome_jogador"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/cor_nome_app"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNrGerados"
+            app:layout_constraintEnd_toStartOf="@+id/tvNrGerados"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvJogada" />
+
+        <TextView
+            android:id="@+id/tvNrGerados"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nr_gerados"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/cor_nome_app"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSomaNr"
+            app:layout_constraintEnd_toStartOf="@+id/tvSomaNr"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvJogador" />
+
+        <TextView
+            android:id="@+id/tvSomaNr"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_soma_nr"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/cor_nome_app"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvResultadoPartida"
+            app:layout_constraintEnd_toStartOf="@+id/tvResultadoPartida"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvNrGerados" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="ivAcertouErrou" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.143" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.49" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
